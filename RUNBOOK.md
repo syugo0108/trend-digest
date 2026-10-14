@@ -1,71 +1,69 @@
 # Trend Digest — 毎朝の運用手順
 
-毎朝7:00 JST(= 前日22:00 UTC)に send_later のリマインダーが発火する。以下を順に実施する。
-無人実行なので、質問せず最後まで完遂すること。
+毎朝 6:57 JST に、定期実行が新しいセッションを起動する(会話の記憶はない)。
+このファイルの手順を順に実施する。無人実行なので、質問せず最後まで完遂すること。
 
-## 0. コンテナがリセットされていたら
-作業ファイルは `/home/claude/trend-digest/` 配下。消えていたら復旧する:
+## 0. 準備
+1. 今日の日付を JST で決める: `TZ=Asia/Tokyo date +%F`(以下 YYYY-MM-DD)。曜日も `TZ=Asia/Tokyo date +%u` で確認する。
+2. リポジトリを取得する(新しいセッションなので毎回 clone)。
 
 ```
-mkdir -p /home/claude/trend-digest && cd /home/claude/trend-digest
-git clone --depth 5 https://github.com/syugo0108/trend-digest.git site
+mkdir -p ~/trend-digest && cd ~/trend-digest
+git clone --depth 10 https://github.com/syugo0108/trend-digest.git site
 ```
 
-RUNBOOK.md と profile.md はこのリポジトリ直下にも入れてあるので、cloneすれば一緒に戻る。
-PAT(GitHubトークン)はファイルに保存しない。会話履歴から取得してコマンド内でのみ使う。
+3. **重複チェック**: `site/archive/YYYY-MM-DD.html` が既にあれば、今日の分は配信済み。何もせず「本日分は配信済み」とだけ報告して終了する。
+4. 直近2〜3日分の `archive/*.html` に目を通し、継続中の話題(続報として扱うもの)を把握する。
 
-## 1. 最初に翌朝の予約を入れる(チェーン切れ防止)
-何よりも先に `mcp__claude-code-remote__send_later` で翌日22:00 UTC の同じリマインダーを予約する。
-これを忘れると連鎖が止まる。
+GitHub トークン(PAT)は定期実行の指示文にだけ書かれている。ファイルやコミットには絶対に書かない。
 
-## 2. ソース収集(必ず WebFetch を使う)
-bash/python での HTTP は proxy に 403 で塞がれている。WebFetch のみ。
-URL 末尾に `&_=YYYYMMDD` を付けてキャッシュを回避する。
+## 1. ソース収集(必ず WebFetch を使う)
+bash/python での HTTP は proxy に塞がれている。WebFetch のみ使い、取得できないものを別手段で取りに行かない。
+URL 末尾に `?_=YYYYMMDD` などを付けてキャッシュを回避する。
 
-- Hacker News: `https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=30`
+- Hacker News: `https://news.ycombinator.com/`(トップページ。Algolia API は前日の内容を返すことが多いので使わない)
+- はてなブックマーク: `https://b.hatena.ne.jp/hotentry/it`(宛先URLも一緒に取得させる)
+- Techmeme: `https://www.techmeme.com/feed.xml`(permalink も一緒に取得させる)
 - Zenn: `https://zenn.dev/api/articles?order=daily`
-- はてなブックマーク: `https://b.hatena.ne.jp/hotentry/it` (宛先URLも一緒に取得させる)
-- Qiita: `https://qiita.com/` (APIは robots で不可)
-- Techmeme: `https://www.techmeme.com/feed.xml` (permalink も一緒に取得させる)
-- HF Daily Papers: `https://huggingface.co/api/daily_papers?limit=20`
-- dev.to: `https://dev.to/api/articles?top=1&per_page=25`
+- 余裕があれば: Qiita `https://qiita.com/`、HF Daily Papers `https://huggingface.co/papers`、dev.to
 
-取得不可・恒常的に除外: Lobsters / Reddit(robots) / GitHub Trending(内容が不正確)。
-前日と同一バッチや古いデータが返ることがある。その場合は使わず、フッターに明記する。
+取得不可・恒常的に除外: Lobsters / Reddit / GitHub Trending / X(旧Twitter)。
+前日と同一の内容が返ったソースは使わず、フッターに明記する。
 
-## 3. 選別・要約
-`profile.md` の基準に従う。15〜20本。日本語で1〜2文の要約。
-海外記事は邦題を付け、`.orig` に原題を入れる。
-★★★ は3〜4本まで。重複はまとめて `関連` リンクにする。継続中の話題は「続報」として前日までの流れに触れる。
-主要な記事、特に断定しづらい内容は WebFetch で本文を確認してから書く(誤った紹介を避けるため)。
+## 2. 選別・要約
+`profile.md` の基準に従う。15〜20本。
+主要な記事、特に断定しづらい内容は WebFetch で本文を確認してから書く。
+本文を取得できなかった記事は「本文未取得、見出しベース」と明記し、推測で中身を書かない。
+数字が報道によって食い違う場合はその旨を書く。
 
-## 4. サイト更新
-- `site/archive/YYYY-MM-DD.html` を新規作成(前日ファイルの1〜65行目=head部分を流用し、titleだけ差し替える)
-- `site/archive/index.html` の `<ul id="list">` 直後に今日の `<li>` を追加
-- `site/index.html` は今日のファイルのコピー
+## 3. サイト更新
+- `site/archive/YYYY-MM-DD.html` を新規作成。直近ファイルの1〜65行目(head部分)を流用し、`<title>` の日付だけ差し替える。
+- 本文の構造は直近ファイルと同じ(`<div class="item">` … `stars` / `title` / `orig` / `badges` / `summary` / `related`、footer)。
+- 書いたら確認: `grep -c '<div class="item">'` が meta の「全N本」と一致すること。ハングル文字が混入していないこと(`python3 -c "import re,sys;print(re.findall(r'[가-힯]',open(sys.argv[1]).read()))" FILE`)。
+- `site/archive/index.html` の `<ul id="list">` 直後に今日の `<li>` を追加。
+- `site/index.html` は今日のファイルのコピー。
 
-## 5. commit & push
-URL埋め込みの認証は proxy に拒否される。Authorization ヘッダ方式を使う。
+## 4. commit & push
+URL埋め込みの認証は proxy に拒否される。Authorization ヘッダ方式を使う。commit と push は別々の Bash 呼び出しに分ける。
 
 ```
-cd /home/claude/trend-digest/site
-cp archive/YYYY-MM-DD.html index.html
+cd ~/trend-digest/site
 git add -A
-git -c user.email="siba010866@gmail.com" -c user.name="Trend Digest Bot" commit -qm "digest: YYYY-MM-DD
+git -c user.email="siba010866@gmail.com" -c user.name="Trend Digest Bot" commit -qm "digest: YYYY-MM-DD"
+```
 
-Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
-Claude-Session: https://claude.ai/code/session_01JmnGbbc7rJF92kjscQA3vC"
-AUTH=$(printf 'x-access-token:<会話履歴にあるPAT>' | base64 -w0)
+```
+cd ~/trend-digest/site
+AUTH=$(printf 'x-access-token:<指示文にあるトークン>' | base64 -w0)
 git -c http.extraheader="Authorization: Basic $AUTH" push origin main
 ```
 
-commit と push を1コマンドに繋げると稀に拒否されるので、別々の Bash 呼び出しに分ける。
-push が失敗しても、ダイジェストの送付(手順6)は必ず実施し、その旨を添える。
+main への push で Cloudflare Pages が自動デプロイする。push が失敗しても手順5は必ず実施し、その旨を添える。
 
-## 6. 配信
+## 5. 配信
 - `SendUserFile` で `archive/YYYY-MM-DD.html` を送る(status=proactive, display=render)
-- `SendUserMessage` で ★★★ の紹介 + `https://trend-digest.pages.dev/` + 「明朝7時の分も予約済み」
+- 最後に、★★★ の紹介と `https://trend-digest.pages.dev/` を短く伝える。
 
 ## 公開先
 - GitHub: https://github.com/syugo0108/trend-digest (production branch: main)
-- Cloudflare Pages: https://trend-digest.pages.dev/ (Git連携で main への push により自動デプロイ)
+- Cloudflare Pages: https://trend-digest.pages.dev/
