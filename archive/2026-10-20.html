@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年10月20日(火)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+
+
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年10月20日(火)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Zenn ・ 全15本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.minimax.io/blog/minimax-m31f">MiniMax M3.1 Flash公開、エージェント向け推論の速度と費用を改善</a></span></div><div class="orig">MiniMax M3.1 Flash: Redefining Agent Performance and Cost</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">MiniMaxはM3.1 Flashを公開し、エージェントやコーディング性能の向上と、従来比で利用費用70%減・推論速度約3倍を発表した。APIは100万トークンあたり入力0.15ドル・出力0.60ドルで提供し、モデルの重みは後日公開予定としている（性能値は開発元の評価）。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.inceptionlabs.ai/blog/introducing-mercury-3">Inceptionが拡散型LLM「Mercury 3」を発表</a></span></div><div class="orig">Diffusion at Scale: Introducing Mercury 3</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Inceptionは100万トークンのコンテキストに対応するMercury 3を発表し、NVIDIA GPU上で毎秒1,068トークンの生成速度を報告した。拡散方式を大規模化したモデルで、ブラウザ操作や対話など遅延の小ささが必要な用途を示している（速度と比較性能は開発元発表）。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://gmo-cybersecurity.com/blog/20261019/">国内企業への侵害調査で、AI攻撃基盤ARTEXの使用を確認</a></span></div><div class="badges"><span class="badge">はてブ</span></div><div class="summary">GMOサイバーセキュリティ byイエラエは、日本企業を狙う攻撃元インフラで自律型ペネトレーションテストシステムARTEXの使用を確認したと報告した。調査範囲内で業種や国を絞った攻撃の傾向と、追加のAI利用インフラ6台を示しており、国内の全攻撃を調べた結論ではない。</div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://mistral.ai/news/timestral/">Mistralの時系列基盤モデル「Timestral」、CPUで確率的予測</a></span></div><div class="orig">Introducing Timestral</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Mistralは500万〜2億900万パラメータの4サイズを用意し、多変量の時系列と既知の将来の説明変数を使った確率的予測に対応した。CPUで推論でき、設備監視や需要予測など既存の数値処理に組み込む用途を示している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://nono.sh/credential-injection">APIキーをエージェントに渡さず、プロキシで注入するnono</a></span></div><div class="orig">Credential Injection — Proxy-Based Secret Management for AI Agents</div><div class="badges"><span class="badge">はてブ</span></div><div class="summary">nonoは、エージェントからのローカルHTTP通信をプロキシが受け、資格情報をヘッダーに追加してTLSで転送する仕組みを説明する。秘密をエージェントの環境変数やメモリに置く方式との違いと、キーストア・送信先の制御を整理している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/ara_jlu/articles/per-task-review-dropped">ステップごとのAIレビューを減らし、設計と最終レビューに重点を移す</a></span></div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">筆者は小規模な比較と運用記録をもとに、全ステップへのレビューを既定から外し、セキュリティに関わる部分へ限定した。ブランチ全体の最終レビューは維持し、差分だけでなく計画も渡す構成にしている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/ojisan_ai_lab/articles/claude-code-idle-compaction-20261019">Claude Codeのアイドル圧縮を、実際の会話ログで観測</a></span></div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">筆者の1台のPCでは、約27万トークンの会話を放置すると55.6分後に13,522トークンへ圧縮されたと報告する。既定設定の単一環境での観測であり、無効化した場合との比較や全利用者への一般化はしていない。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/fusic/articles/snowflake-ai-parse-document-minutes">SnowflakeのSQLから議事録を分類し、案件の状態を検索する</a></span></div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">S3に置いた議事録を取り込み、Cortex AIの構造化出力で技術タグ・案件・進行状態・根拠文をテーブル化する実装例。分類候補をマスターテーブルから渡し、新しい議事録だけを解析する構成とサンプルコードを公開している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://home.cern/cern-and-mistral-join-forces-to-accelerate-ai-for-science/">CERNとMistral、衝突型加速器の基盤モデル開発に向けて協力</a></span></div><div class="orig">CERN and Mistral join forces to accelerate AI for science</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">両者は長期的な戦略提携に向けた意向書を締結し、LHCの模擬衝突データからLarge Physics Modelを開発する構想を公表した。粒子の再構成や識別、想定外の信号検出などを単一の事前学習モデルで支援することを目指す。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/pksha/articles/0f9c11d1daea2e">配布するPythonコードの難読化を、AI時代の解析コストから考える</a></span></div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">PKSHAの技術記事がPyarmorの動作とオプションを実験し、実行できるコードの秘匿には限界があることを整理する。顧客環境に配布する場合に、何を守りたいのかと解析にかかる手間を分けて判断する内容だ。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://github.com/kksimp/Mac.apk">Mac.apk：AndroidアプリをApple Silicon上のネイティブプロセスで実行</a></span></div><div class="orig">Android apps running native on macOS</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Mac.apkはAndroidのアプリ実行環境をmacOS上に実装し、仮想マシンやLinuxを起動せずアプリを動かすプロジェクト。開発元はアルファ版と位置づけ、動作するアプリと一部機能のみ動くアプリがあることを明記している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://community.letsencrypt.org/t/lets-encrypt-is-adding-two-additional-remote-perspectives-for-domain-validation/252166">Let’s Encrypt、ドメイン検証の外部観測拠点を2つ追加へ</a></span></div><div class="orig">Let’s Encrypt is adding two additional remote perspectives for domain validation</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Let’s Encryptは外部の検証拠点を4つから6つへ増やし、主拠点を含む計7拠点から検証する予定を公表した。ステージングは10月27日、本番は順調なら11月10日からの導入を予定し、経路乗っ取りに対する検証の強化を図る。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/hand_dot/articles/ecb391d4322330">OSSのPR制限を、メンテナーの負担と信頼形成から整理する</a></span></div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">pdfmeのメンテナーが、自身の運用経験を交えながら、外部PRを閉じる・事前承認を求めるなどOSS側の対応を整理した。コードを送る前にIssueやDiscussionで意図を共有することを、参加の入り口として提案している。</div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://chriskiehl.com/article/it-is-still-ok-to-enjoy-programming">プログラミングを楽しむことに、経済的な理由はいらない</a></span></div><div class="orig">It’s still OK to enjoy programming</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">筆者は、仕事でのコード作成の経済性と、趣味として問題を解いたり言語の考え方を学ぶ楽しさを分けて論じる。AIで作ることも手で書くことも楽しめるという、自身の経験を述べたエッセー。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.softbank.jp/corp/news/press/sbkk/2026/20261019_01/">My SoftBankなどのウェブ版を一時停止、アプリ版は利用可能</a></span></div><div class="badges"><span class="badge">はてブ</span></div><div class="summary">ソフトバンクは不正アクセスの試みを検知し、安全措置として10月17日からMy SoftBank・My Y!mobile・My Menuのウェブ版を一時停止したと発表した。10月19日の発表ではアプリ版は利用可能とし、ウェブ版の再開は準備が整い次第案内するとしている。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 10/20朝に収集。掲載15本はリンク先の本文を確認。モデル性能は各開発元の発表であり独立検証ではない。Techmemeは取得不可(HTTP 403)。Qiita・Hugging Face Papers・dev.toは今回未使用。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
