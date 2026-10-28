@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年10月29日(木)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年10月29日(木)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Techmeme ・ Zenn ・ 全17本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">Google、Gemini 4 Carbonを発表――まずサイバー防御担当者へ限定提供</a></span></div><div class="orig">Gemini 4 Carbon: our next frontier model</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Googleは、長時間のソフトウェア開発とサイバー防御を強化したモデルを発表し、脆弱性検出・修正などの評価改善を報告した。提供は今週から一部の防御担当者に限定して始め、一般向けには今後展開する計画であり、性能・安全性は同社による評価として読む必要がある。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://v12.sh/blog/the-case-of-the-9bit-aes-key">PDFの「AES-256」を弱めていた鍵生成、MuPDFでは乱数の実効状態が9ビットに</a></span></div><div class="orig">The case of the 9 bit AES key</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">V12は複数のPDF実装で暗号鍵の乱数源が弱く、MuPDF 1.28.5より前では鍵に影響するランダム状態が9ビットしかないと報告した。AES自体の破綻ではなく実装の問題で、MuPDFは修正済みだが、過去に配布した暗号化PDFまで遡って保護できない点が重要だ。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://surgehq.ai/blog/dayjob-tax">税務AIの実務ベンチマーク「DAYJOB: Tax」、首位でも厳格な合格基準では10.8%</a></span></div><div class="orig">DAYJOB: Tax — Benchmarking AI Agents on Professional Tax Work</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Surge AIは、専門業務50件・1,789ファイルで、不完全な依頼や矛盾する資料から成果物まで仕上げる能力を測る評価を公開した。首位のClaude Sonnet 5.5の10.8%は「評価基準の95%以上を満たす試行」のpass@1であり、単純な正答率ではなく、計算以外の論点発見や専門判断の難しさを示す。</div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://cursor.com/blog/agent-sdk">Cursor Agent SDK、指示・ツール・評価をコードで運用する仕組みがHNで再注目</a></span></div><div class="orig">Introducing the Agent SDK</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">10月20日公開の記事がHNで注目されている。Markdownの指示とTypeScriptのツールに評価・イベント再生を組み合わせ、PRレビューやインシデント調査用エージェントをCursorのインフラまたは自社環境へ配置できるという。</div></div>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://speakerdeck.com/yosuke_furukawa/ai-ga-kodo-o-kai-te-kureru-jidai-wareware-ha-nani-o-tashikameru-no-ka">AIがコードを書く時代、人は何を確かめるのか――レビューをリスクで考える</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">10月28日の登壇資料は、AI生成コードでも責任とオーナーシップは人に残るとして、全行の確認からリスクに応じた重点確認へ論点を整理する。品質基準をエージェントの実行・検証基盤に組み込み、外部要件の変化に合わせて更新し続けるという、チームの運用設計に役立つ視点だ。</div></div>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://speakerdeck.com/konifar/ai-de-sentakushi-ga-hirogata-soshiki-sekkei-no-risou-to-genjitsu">Kyash、AI活用で組織設計をどう変えたか――約20人の開発組織の試行</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">AI活用基盤チームの設置、事業部単位からプロジェクト単位への編成、PM機能の整理、管理職自身の開発継続を説明する10月28日の登壇資料。開始約3カ月の一組織の試行として書かれており、普遍的な成功法則ではなく、組織の制約と選択肢を考える事例として読める。</div></div>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://zenn.dev/yoshihiko555/articles/2e0444a63c2aa3">pi coding agentに限定的な自動承認を追加――まず記録から始める実践</a></span></div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">自作の承認ゲートに判定モデルJevを組み込み、人の判断と並べて記録した後、依頼の明示性と操作の戻しやすさを分けて自動許可の範囲を絞った。合成例21件と少量の運用記録による検証で、プロンプトインジェクション耐性は未測定、発話の外部送信もあるため、安全性が確立した仕組みではない。</div></div>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://zenn.dev/shoma_endo/articles/agent-downloads-hijack-guard">AGENTS.md乗っ取り対策、テスト27件を通ったhookが攻撃役AIに破られる</a></span></div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">自作hookの通常テストだけでは不足し、別エージェントの攻撃検証を受けて文字列照合中心の対策を見直した個人の実践記録。設定値の構造比較やsandboxなどを重ねる一方、一部は事後検出であり、完全防御や各製品一般の脆弱性を証明したものではない。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://www.preferred.jp/ja/blog/tech/1798">PFN、Markdownから日本語PDFを作るCLI「pfpdf」をOSS公開</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">GFM、数式、コード、BibTeXと7種類のテンプレートを扱い、Vivliostyle CLI・Chromium・同梱フォントでGit管理した原稿からPDFを再生成する設計。文書生成を開発フローへ組み込みやすい一方、初回には数百MB規模のブラウザ取得が必要な場合があり、無依存の変換器ではない。</div></div>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://blog.willnet.in/entry/2026/10/28/180758">wkhtmltopdfの次をどうするか、RailsでPDF生成を移行する実践</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">ferrum_pdf・grover・Gotenbergを比較し、gotenberg-railsを作った経験から、Servo由来のパーサを使うsghtmltopdfを次の候補として検証する。相対URLの解決とSSRF対策のトレードオフも扱うが、sghtmltopdfは開発中で、不具合を直しながら移行を試す段階だ。</div></div>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://blog.serverworks.co.jp/guardduty-ai-protection">GuardDuty AI Protectionの運用解説――検出と遮断、通知設計を分ける</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">7月提供開始済みの機能を、AWS AIサービスの異常利用・コストハーベスティング・直接プロンプトインジェクションの監視という観点から整理する。通常のGuardDutyとは別に有効化が必要で、検出だけでは遮断されないことや、Low重大度も拾う通知設計が実務上の確認点になる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://www.circuithub.com/post/unveiling-the-grid">CircuitHub「The Grid」、基板ごとに工程を変えるロボット工場を紹介</a></span></div><div class="orig">Unveiling The Grid: PCBs made in America, twice as fast as Shenzhen</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">浮上式の搬送機で基板や部品を工程間に運び、学習モデル・AIエージェント・従来の最適化を組み合わせて、設計ごとの段取り替えを減らす米国工場を説明する。記事の「深圳より速い」は特定の4層基板を5枚発注した比較例で、一般的な納期・価格の優位性まで独立検証されたわけではない。</div></div>
+<div class="item"><div class="top"><span class="stars">★★</span><span class="title"><a href="https://www.magnopus.com/blog/gaussiansplats-part-3-theres-always-a-bigger-scene">巨大なGaussian Splatシーンを限られたVRAMで描く、LODとストリーミングの実装</a></span></div><div class="orig">Gaussian splats part 3: There’s always a bigger scene</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Magnopusは、視点と画面上の誤差に応じたLOD選択、粗いデータからの非同期読み込み、不要領域の退避でGPUメモリを一定に保つ設計を解説する。GPUへの転送完了前に描画可能と扱わないなど、巨大シーンを実装する際の落とし穴まで具体的だ。</div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★</span><span class="title"><a href="https://www.apple.com/macbook-pro/proled-xdr-display/">Apple、タッチ操作とDynamic Islandを備えるPROLED XDR版MacBook Pro</a></span></div><div class="orig">MacBook Pro with PROLED XDR Display</div><div class="badges"><span class="badge">Techmeme / Hacker News</span></div><div class="summary">公式米国ページは、タッチ対応のタンデムOLEDディスプレイ、M5 Pro／M5 Max、14・16インチのモデルを案内し、11月6日からの提供を掲げる。同じ比較表のM6搭載Liquid Retina XDRモデルとは別製品で、日本の発売日・価格は今回確認していない。</div></div>
+<div class="item"><div class="top"><span class="stars">★</span><span class="title"><a href="https://formlabs.com/products/form-studio-1-basic-founders-edition/">Formlabs、699ドルのデスクトップMSLAプリンター「Form Studio 1」</a></span></div><div class="orig">Form Studio 1 | Professional Desktop 3D Printer for Anyone | Formlabs</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">米国向け基本構成は税別699ドルで、造形範囲は200×125×235mm、他社材料を利用するOpen Material Modeも含む。洗浄・硬化設備などは基本構成とは別であり、材料や換気条件を含めた運用コストを見る必要がある。</div></div>
+<div class="item"><div class="top"><span class="stars">★</span><span class="title"><a href="https://wiki.alpinebsd.org/">AlpineBSD、NetBSDカーネルとAlpine風ユーザーランドを組み合わせる実験</a></span></div><div class="orig">AlpineBSD wiki</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">NetBSDのカーネルとlibcにapk-tools・busyboxなどを組み合わせ、ベースシステムと主要パッケージにLLM出力を含めない方針を掲げる。まだインストーラーのない開発途上のOSで、公式もLinuxより限られるハードウェア対応に注意を促している。</div></div>
+<div class="item"><div class="top"><span class="stars">★</span><span class="title"><a href="https://vertex.degree/">パズルから証明へ進む無料教材「Start Doing Graph Theory」</a></span></div><div class="orig">Start Doing Graph Theory</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Mikhail Lavrovによる、パズルを解いたり定理を証明したりしながらグラフ理論を学ぶ入門書がHNで注目されている。オンライン版とPDFをCC BY-SA 4.0で公開しており、新刊発表ではなく、数学の基礎を学び直す教材としての紹介だ。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 10/29 06:53〜06:57 JSTごろに収集。HN・はてなのクエリ付きURLは取得できず通常の公開トップを使用。Techmeme RSSは取得ツールで処理できず公開HTML版を使用した。Zenn日次APIは取得不能、トップのトレンド一覧も抽出できなかったため、公開検索・はてなから個別記事へ進んで本文を確認した。掲載17件は本文（登壇資料は公開Transcript）を確認済み。過去3号との重複を避け、以前公開された記事は再注目や運用解説と明記した。性能・価格・安全性は各発表者の説明であり、コード実行、実機検証、ベンチマークの再現はしていない。認証やアクセス制限の回避は行っていない。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
