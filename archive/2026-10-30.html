@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年10月30日(金)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年10月30日(金)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Techmeme ・ Zenn ・ 全18本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://mistral.ai/news/mistral-large-4-oss/">Mistral、Large 4の重みを公開――コードと防御に強いMoE</a></span></div><div class="orig">We&#x27;re releasing the weights of Mistral Large 4</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">MistralがMistral Large 4（コード名 Le Chonk）の重みを公開した。指示追従・推論・エージェント用途を1つのモデルに統合したマルチモーダルMoEで、サイバーセキュリティ・金融・製造の分野でオープンウェイト中最上位と同社は説明する。160以上の言語を扱い、APIは入力100万トークン0.7ドル・出力2.1ドル。Hugging Faceで配布し、vLLMやSGLangで自前運用できる。技術レポートは後日公開予定。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers">PHP2Shellとカーネル昇格を連鎖、PAN-OS 25台をroot化</a></span></div><div class="orig">Chained PHP2Shell exploit roots 25 servers, including US Government servers</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Dreamの研究チームは、PHP2Shell（CVE-2026-109618 / 109619）とカーネル権限昇格のFragnesia（CVE-2026-46300）を組み合わせ、インターネットに露出したPAN-OSのファイアウォールと管理サーバー25台をroot化した攻撃の成果物を公開した。認証なしの1回のHTTPリクエストで任意コード実行に至り、標的は米国・日本・台湾・韓国に及ぶ。使われたのは公開exploitのコピーではなく独自実装で、標的リストと約40本のpost-exploitationスクリプトも含まれていた。Palo Alto Networksと共同で調査しており、10月29日に追記されている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.itmedia.co.jp/news/article/2610/29/2000002716/">グッドスマイル、決済ページ侵入でカード番号全16桁など2800人分が流出か</a></span></div><div class="orig">グッスマ、顧客の2800人のカード番号全16桁＋セキュリティコードなど流出か</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">グッドスマイルカンパニーは10月29日、公式オンラインショップへの不正アクセスで、顧客2800人のカード名義人名・カード番号（全16桁）・有効期限・セキュリティコードが漏えいした可能性があると発表した。決済ページに不正なプログラムが設置されており、10月21日13時55分から23日7時までの利用者が対象。下4桁だけの情報は40万枚分に及ぶという。10/28号で扱ったGMO・So-net・IDCフロンティアと並ぶ国内の不正アクセス連鎖の一例になる。</div><div class="related">関連: <a href="https://kai-you.net/article/96997">kai-you</a> / <a href="/archive/2026-10-28.html">10/28号の国内インシデント連鎖</a></div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://trakkr.ai/trakkr-research/zombie-stats">AIが引用する統計1,285件を追跡、半分近くは元の研究にたどり着かない</a></span></div><div class="orig">Zombie stats: Where the numbers AI quotes come from</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Trakkrは5つのAIアシスタントに統計を尋ね、その出典1,285件をたどった。同じ内容の研究に行き着いたのは半数未満で、残りは研究の裏付けがない数字だった。例に挙げた「44%の営業担当者は1回のフォローアップで諦める」は全アシスタントが同じ数字を答え、ChatGPTだけが根拠不明と述べたが、出典の先は2017年からある独立ライターの見本記事で研究には行き着かない。数字が正しいかは、回答の口調や引用の見た目からは判別できないと筆者は指摘する。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://martinfowler.com/bliki/LLM-Voice.html">Martin Fowler、LLMが書いた文章の「声」を見分ける手がかり</a></span></div><div class="orig">LLM Voice</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Martin Fowlerは、読んでいてLLMの出力ではないかと感じる文章の特徴をまとめた。決め手はダッシュの使い方ではなく「load-bearing tapestries」のような中身の薄い修飾で、読み進める意欲が削がれると書く。判別ツールの紹介ではなく、読む側の違和感を言語化した短い記事。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://speakerdeck.com/minodriven/abstraction-design-and-quality">AI生成コードを読むべきか、抽象化設計と品質保証をどう組むか</a></span></div><div class="orig">AIが生成したコードは読むべきか？抽象化設計とコードの品質保証</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">Qiita Conference 2026 Autumnの登壇資料。AIが書いたコードを前提に、抽象化の設計と品質保証をどう組み合わせるかを扱う。スライドの見出し情報のみで、本文の主張までは取得できていない。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/issy/articles/aws-codecommit-pr-agent-bedrock-review">CodeCommitのPRをBedrockで自動レビュー、986回運用のコストと限界</a></span></div><div class="orig">CodeCommit の PR を Bedrock で AI レビュー、10 週間・986 回運用して分かったコストと限界</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">CodeCommitにはGitHubほどレビュー周辺のエコシステムがないため、PRの作成・更新をEventBridgeで受け、LambdaからBedrockに差分を渡してコメントを投稿する仕組みを自前で作った。OSSのPR-Agentは使わず、コードとドキュメントを別コメントにするなど運用に合わせている。月額コスト、誰のPRでどのモデルが何トークン使ったか、指摘の重要度別の件数、マージまでの時間を可視化し、986回分の運用結果と限界を報告している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/yasuakiomokawa/articles/5a7188483acfe7">AIにデバッグ用の機能を書かせても脆弱性にしない設計</a></span></div><div class="orig">AI にデバッグ用の機能を書かせても、脆弱性にしないために</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">認証基盤の開発で、任意の利用者としてログインできる試験用APIを作ったところ、本番で動けばそのままアカウント乗っ取りになるという問題に対処した事例。環境変数の分岐は設定を誤ると緩い側で動くため、本番コードが自分で本番かどうかを判定しない構成にした。本番は開発用ディレクトリを除いたソースツリーからビルドし、開発用コードをimportするとビルドが止まる。開発用のエントリーポイントは許可リストで設定を確かめ、外れていれば起動しない。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://gigazine.net/news/20261029-anti-ai-words-in-script/">AIのコード解析を妨害するため、危険とされる語句を大量混入させる手口</a></span></div><div class="orig">AIのコード解析を妨害するために「天安門事件」「台湾独立」「水道水に毒物混入」などのフレーズを大量に混入させる手法が発見される</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">セキュリティ研究者のveritas氏が、AIの安全対策を逆手に取るプログラムを発見した。「天安門事件」「台湾独立」「水道水に毒物混入」など、AIが拒否しやすい語句をコードに大量に紛れ込ませ、AIによる解析を妨害する。悪意あるコードの検出をすり抜けさせる手口として報告されている。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://ashunar0.dev/posts/cloudflare-free-plan/">Cloudflareはなぜ無料で使えるのか、Workers・Pages・R2の原資</a></span></div><div class="orig">Cloudflare はなんでこんなに無料で使わせてくれるの？</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">Workersは1日10万リクエスト、Pagesは帯域無制限、D1は5GB、R2は転送料無料と、無料枠の広さを整理した記事。個人開発なら1円も払わずに公開から運用までできる水準だと述べ、その原資をどこが負担しているのかを解説する。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/polyco/articles/26624b38c951b5">2026年10月時点のE2E戦略、網羅的な整備とCIでの抜け検出</a></span></div><div class="orig">最近の E2E 戦略（2026 年 10 月現在）</div><div class="badges"><span class="badge">はてなブックマーク</span><span class="badge">Zenn</span></div><div class="summary">E2Eを主要シナリオだけでなく網羅的に整備し、実装から拾った確認対象とシナリオの対応漏れをCIで落とす仕組みを作った。ローカルのE2E実行を開発ワークフローの品質ゲートに組み込み、毎回全シナリオではなく実装に関連する範囲だけを回している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/nrs/articles/c777388530aa84">コードを読まずにマージする「no look merge」に何が必要か</a></span></div><div class="orig">コードを読まずにマージするために必要なこと</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">AIに実装を任せるとレビュー待ちのPRがたまり、人が差分を読む前提が回らなくなる。テストで動作を確かめ、設計とセキュリティのレビューをAIに任せ、未実施の検証や未解決の指摘が残るPRはマージしない、という条件を整理している。2021年のShip/Show/AskのShowのように、品質の確認とマージ前の承認を分ける運用が前例として挙げられている。</div><div class="related">関連: <a href="https://zenn.dev/karamage/articles/ac71f1c89c73ff">人間がコードを読まずにPRをマージする技術</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/progate/articles/24b1140180300c">GitHub Actionsのバージョン指定をやめ、actions.lockで固定する</a></span></div><div class="orig">GitHub Actions で checkout@v7 のようなバージョン指定を書くのはやめよう！ 時代は actions.lock！</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">uses: foo@v7 のようなメジャーバージョン指定は、タグが書き換わると中身が変わり得る。コミットSHAでの固定に加えて、依存をロックファイル（actions.lock）で管理する方法を紹介し、更新の手順までまとめている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/ivry/articles/d155267331a3ca">IVRy、電話アプリをFlutterからフルNativeへ移行した理由</a></span></div><div class="orig">Flutter やめました。電話アプリを Native にした理由</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">IVRyはFlutterで作っていたモバイルアプリを、iOSはSwift/SwiftUI、AndroidはKotlin/Jetpack ComposeのフルNative構成へ移行し、2026年10月に両OSで全ユーザーへの展開を終えた。導入当時は少人数で両OSを同時に開発できる合理的な選択だったが、環境の変化を受けて判断を見直した経緯を、意思決定を含めて説明している。</div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://about.doordash.com/en-us/news/doordash-to-acquire-instacart">DoorDashがInstacartを買収へ、1株65ドルで26%のプレミアム</a></span></div><div class="orig">DoorDash to acquire Instacart</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">DoorDashはInstacartを1株65ドルで買収すると発表した。2026年10月22日の終値に対して26%のプレミアムで、現金65ドルかDoorDash株0.3372株のどちらかを受け取れる。完了後もInstacartのブランド・法人向け技術製品・アプリは維持する方針で、取引完了までは両社を別会社として運営する。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261029/p54#a261029p54">AmazonのQ3、AWS売上39%増の459.8億ドル、営業利益55%増</a></span></div><div class="orig">Amazon reports Q3 AWS revenue up 39% YoY to $45.98B, above $45.29B est., and AWS operating income up 55% to $17.77B</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Amazonの2026年Q3で、AWSの売上高は前年同期比39%増の459.8億ドル、営業利益は55%増の177.7億ドルとなり、市場予想（売上452.9億ドル、営業利益169.7億ドル）を上回った。CNBCの報道。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.itmedia.co.jp/news/article/2610/29/2000002730/">不正アクセスによる漏えい、半年で延べ2.6億人――日本の人口の2倍超</a></span></div><div class="orig">不正アクセスによる漏えい人数、半年余りでのべ2億6000万人に　日本人口の2倍超</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">個人情報保護委員会は10月28日、2026年4月1日から10月16日までに報告された不正アクセスによる個人情報の漏えい（またはその恐れ）の対象者数が延べ約2億6,000万人だったと公表した。2026年10月1日時点の日本の総人口の2倍以上に相当する。</div><div class="related">関連: <a href="/archive/2026-10-28.html">10/28号の国内インシデント連鎖</a></div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://gigazine.net/news/20261029-religious-exemption-from-ai/">AI利用を宗教的理由で免除された最初の事例、ケンタッキー大学の職員</a></span></div><div class="orig">AIの利用を宗教的理由で免除された人間</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">ケンタッキー大学の職員が、業務でAIを使うよう求められたことに対し、宗教上の理由による免除を申請して認められた。Religious News Serviceが報じた事例をGIGAZINEが紹介している。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 10/30 07:00 JSTごろに収集（HNトップ・はてなIT・Techmeme・Zenn日次API）。4ソースとも取得できた。Mistral・DoorDash・PHP2Shell・ゾンビ統計・Fowler・Zenn各記事は本文を取得して確認し、グッドスマイルの漏えいは10/21〜23の決済ページ改ざんとして扱った。登壇資料1件はスライドの見出し情報のみで、本文は確認していない。価格・数値は各発表者の記述による。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
