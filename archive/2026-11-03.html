@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年11月3日(火)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年11月3日(火)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Techmeme ・ Zenn ・ 全17本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://rikiyat.github.io/blog/weight-space-programming/">LLMがニューラルネットの重みを直接読み書きする「重み空間プログラミング」</a></span></div><div class="orig">Sparks of Weight-Space Programming: LLMs can natively read &amp; write neural network weights</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Rikiya Takehi氏の記事。GPT-6 Astraがニューラルネットの重みを直接読み書きでき、生の重みを見ただけでネットワークが何を学習したかを言い当てるという。環境からのフィードバックなしに、PPOで1億ステップ学習したネットワークを上回る小さなゲーム用ネットワークを書き、Qwen3.5-0.8Bの数学性能は勾配なしで重みの0.016%を編集して改善した。最適化と解釈性の両方に効く可能性があるとしている。</div><div class="related">関連: <a href="https://www.techmeme.com/261102/p36#a261102p36">Techmeme（同研究の報道）</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.itmedia.co.jp/news/article/2611/02/2000002806/">GMO熊谷代表が会見で謝罪、身代金は支払わない方針を明言</a></span></div><div class="orig">GMO熊谷代表、会見で改めて謝罪　SNS投稿巡り「配慮が欠けていた」</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">GMOインターネットグループの熊谷正寿代表は11月2日、FX自動売買用VPS「お名前.com デスクトップクラウド」への不正アクセスを巡って記者会見を開き、「お客さまをお守りすることができず、誠に申し訳ありませんでした」と謝罪した。攻撃者に身代金を支払わない方針を明言し、「一歩たりとも犯罪者にお金を払うことはしない」と語った。会見は3部構成で、SNS投稿について「配慮が欠けていた」との説明もあった。涙ぐむ場面や「命の砂時計」という表現がSNSで反響を呼んでいる。</div><div class="related">関連: <a href="https://www.itmedia.co.jp/news/article/2611/02/2000002823/">会見の詳報（熊谷節）</a> / <a href="/archive/2026-11-02.html">11/02号: 北朝鮮系の関与か</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.theguardian.com/world/2026/nov/02/supermarket-freezers-across-europe-hit-by-second-suspected-cyber-attack">欧州のスーパーの冷凍庫が2度目のサイバー攻撃、食品が廃棄に</a></span></div><div class="orig">Shop fridges and freezers across Europe hit by fresh suspected cyber-attack</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">欧州各国のスーパーの冷蔵・冷凍設備が、2度目とみられるサイバー攻撃を受けた。スウェーデン南部のICAの店舗では冷却装置が過熱し、従業員が商品を廃棄する事態になったと写真付きで報じている。食品の冷却を制御するシステムが標的になり、物理的な影響が出ている。</div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.businessinsider.com/anthropic-claude-internal-ai-use-exceeds-employee-pay-tokens-2026-11">Anthropicの社内AI利用、定価換算で従業員給与を超える</a></span></div><div class="orig">Anthropic&#x27;s internal AI use, at retail prices, now exceeds its employee pay</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Business InsiderのAlistair Barr記者の記事。Anthropicは社内のAI利用を定価で評価しており、その額が従業員への給与を上回るようになったという。同紙は3月に、AIのトークン消費を給与・賞与・株式に次ぐ「報酬の第4要素」として扱う企業が出てきたと報じており、Anthropicの数字はその象徴だと位置づけている。9月に同社のソフトウェアへ追加されたコードの9割超がClaudeによるものだという。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261102/p32#a261102p32">DeepSeekが「creator mode」、Harnessで独自プラグインを作れるように</a></span></div><div class="orig">DeepSeek releases a &quot;creator mode&quot; that allows users of DeepSeek Harness to create custom plugins</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Bloombergの報道として、DeepSeekが「creator mode」を公開した。DeepSeek Harnessの利用者が、3Dモデルのレンダラーや動画編集のワークベンチのようなカスタムプラグインを作れるようになるという。提供範囲と制限は確認していない。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261102/p31#a261102p31">Anthropic、Claude Codeに「他人のゲームを再現しない」制限</a></span></div><div class="orig">Anthropic confirms new Claude Code limits &quot;to steer it away from recreating someone else&#x27;s specific game&quot;</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">AnthropicがClaude Codeに新しい制限を加えたと認めた。狙いは「誰かが作った特定のゲームを再現する」ことを避けさせることで、知的財産の侵害は利用ポリシーに反すると説明している。Tom&#x27;s Hardwareが報じている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://pc.watch.impress.co.jp/docs/news/2153055.html">写真1枚から3D化するAI「Idol」無償公開、VRAM10GBで動く</a></span></div><div class="orig">写真1枚から“裏側まで”3D化するAI「Idol」無償公開、VRAM10GBでも動く</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">写真1枚から裏側まで含めて3D化するAI「Idol」が無償公開された。VRAM 10GBでも動くという。PC Watchが報じている。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://chalmovsky.com/posts/wtf-ubuntu">Ubuntu、CVSS 9.8のCVE-2026-98432が2週間以上未修正</a></span></div><div class="orig">WTF Ubuntu?</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">CVE-2026-98432（CVSS 9.8）は2016年からLinuxカーネルのTCP処理にあった脆弱性で、Anthropicはrootを取れる実証コードを作ったとしている。Debianは10月16日に修正したが、Ubuntuは2週間以上たっても修正版を出しておらず、LTSを含む全サポート版が「Vulnerable」のままだと筆者は指摘する。Ubuntuの「迅速なパッチ」という説明との乖離を問う内容。</div><div class="related">関連: <a href="/archive/2026-11-01.html">11/01号: CVE-2026-98432の解説</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://posthog.com/blog/moving-off-duckdb">PostHog、DuckDBのウェアハウスをTrinoへ移行</a></span></div><div class="orig">Why we&#x27;re moving our warehouse off DuckDB</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">PostHogは5か月前にウェアハウスをClickHouseからDuckDBへ移し、今度はTrino（HogLake）へ作り直すと決めた。1台では優秀なDuckDBだが、顧客のクエリが想定より複雑になり、クラウドで安全に動かすには巨大なインスタンスが必要になるなど、ローカルで良かった特徴がクラウドで問題になった。1兆行が課題になったという。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/yusukebe/articles/3d3dc6605ca1b1">Honoの「Agent DX」、AIを利用者として開発者体験を測る</a></span></div><div class="orig">Agent DX 〜 AI時代にフレームワークHonoは必要か</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">Honoの作者が「Agent DX」という取り組みを始めた。AIが利用者になった前提で、AI向けの開発者体験を計測する。人間の感想ではなく、AIがフレームワークを使ってどう振る舞うかを測るという考え方で、3つのカンファレンスでの講演を記事化している。</div><div class="related">関連: <a href="/archive/2026-11-02.html">11/02号: HonoがPRを閉じた理由</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/koheiwada/articles/houritsu-japanese-laws-as-git">日本の全法令をgitの履歴にしてみた</a></span></div><div class="orig">日本の全法令を git の履歴にしてみた</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">日本の全法令をgitの履歴として扱えるようにした試み。法律の専門家ではない筆者が、AIを使って調べる過程で思いついたもので、国会会議録のAPIなどを使って構築している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/tokium_dev/articles/adr-authoring-guideline">AIが書く読みづらいADRに、ガイドラインを作った</a></span></div><div class="orig">AIが書く「読みづらいADR」に発狂しかけたので、ADRのガイドラインを作った</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">AIが書く読みづらいADRに困り、ADRのガイドラインを作った話。何を書くか、どう書けば読み手が判断できるようになるかを整理している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/luvtechno/articles/isucon2026-competition-day">ISUCON2026で優勝、当日の運びを時系列で</a></span></div><div class="orig">ISUCON2026 で優勝しました（当日編）</div><div class="badges"><span class="badge">Zenn</span><span class="badge">はてなブックマーク</span></div><div class="summary">ISUCON2026で優勝したチームの当日記録。8:53に用意していたagent skillで競技エージェントを起動し、Playwrightのセッションを渡してポータルを操作させたところから始まる。人間とエージェントの役割分担を、当日どう回したかを時系列で書いている。</div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261102/p38#a261102p38">PalantirのQ3、売上96%増の23.1億ドル</a></span></div><div class="orig">Palantir reports Q3 revenue up 96% YoY to $2.31B, above $2.18B est.</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Palantirの2026年Q3は売上高が前年同期比96%増の23.1億ドルで、市場予想の21.8億ドルを上回った。米国の商用売上は148%増の9億8,400万ドルで、通期の売上見通しを約85.3億ドルに引き上げている。CNBCが報じている。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261102/p39#a261102p39">AppleのQ4、売上12%増の1,144.8億ドル</a></span></div><div class="orig">Apple reports Q4 revenue up 12% YoY to $114.48B, vs. $113.39B est.</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Appleの2026年Q4は売上高が前年同期比12%増の1,144.8億ドルで、市場予想の1,133.9億ドルを上回った。iPhoneは17%増の575.8億ドル、Macは24%増の108億ドルと伸び、iPadは10%減、中国の売上は21%増の175億ドルだった。John Ternus氏の下での最初の決算になる。</div><div class="related">関連: <a href="https://www.techmeme.com/261102/p40#a261102p40">製品別の内訳</a></div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261102/p35#a261102p35">SUSE、従業員の約1割を削減</a></span></div><div class="orig">Memo: Linux distribution vendor SUSE is laying off ~10% of its employees</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">LinuxディストリビューションのSUSEが、従業員の約10%を削減する方針を伝えた。社内メモでは「自動化とAIがソフトウェア企業の働き方を根本から変えている」と説明しているとThe Registerが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://k-tai.watch.impress.co.jp/docs/news/2153051.html">ドコモの5G化率18.5%で最下位、基地局は他社の半分以下</a></span></div><div class="orig">ドコモの5G基地局は他社の半分以下、5G化率18.5％で最下位　総務省調査</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">総務省の調査で、ドコモの5G基地局数が他社の半分以下にとどまり、5G化率は18.5%で最下位だったとケータイWatchが報じた。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 11/3 06:57 JSTごろに収集（HNトップ・はてなIT・Techmeme・Zenn日次API）。4ソースとも取得できた。Astraの記事、Ubuntu、PostHog、Hono、ISUCON、Business Insider は本文を取得して確認し、GMOの会見はITmediaの2本、Apple・Palantir・SUSEはTechmemeの要約で確認した。DeepSeekのcreator modeとIdolは見出し情報のみ。CVE-2026-98432は10/31・11/01号で扱済みだが、Ubuntuが未修正という新しい論点があるため続報として採った。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
