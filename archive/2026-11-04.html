@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年11月4日(水)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年11月4日(水)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Techmeme ・ Zenn ・ 全17本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://github.com/postmanlabs/postman-app-support/issues/14370">Postman、無断でAIプラグインを導入し他のコーディングエージェントを書き換え</a></span></div><div class="orig">[SEVERE] Desktop auto-installs Codex/Claude plugins; installer attempts to trust its own startup hook</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Postmanのデスクトップ版を起動したところ、CodexやClaude Codeの設定が変わっていたという報告が起票された。ユーザー全体に効くPostmanプラグイン、起動時の指示フック、リモートMCP接続、Claude Codeプラグイン、Postman CLIが自動で導入され、CodexがAPI作業をPostmanのスキル経由に回すようになったという。報告者は、APIクライアントが起動しただけで他のツールの既定の作業経路になるのは同意と信頼境界の問題だと指摘している。検証はPostman 12.33.4で行われた。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://honnibal.dev/blog/astra-read-write-misleading">「Astraが重みを読み書き」記事は誤解を招く、手品の寄せ集めだと指摘</a></span></div><div class="orig">The &#x27;Astra can read and write weights to improve Qwen&#x27; post is misleading</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Matthew Honnibal氏が、前号で扱った「Astraが重みを読み書きする」記事の主張は誤解を招くと論じた。要約では「生の重みを見るだけで」と書かれているが、実際には生の重みを見る実験、ゲーム用ネットワークを改善する実験、Qwenの数学性能を上げる実験が別々にあり、後者2つは「見るだけ」では成立しないという。手品が毎回違う仕掛けで同じ現象を作るのに似ていて、実験ごとに仮説が崩されるので分からなくなる、と説明している。</div><div class="related">関連: <a href="/archive/2026-11-03.html">11/03号: 重み空間プログラミング</a> / <a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/">Simon Willison の追試</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.techmeme.com/261103/p36#a261103p36">Revolut、自前のGLMでAIコーディングの推論コストを90%削減</a></span></div><div class="orig">Revolut says it cut AI coding inference costs by ~90% in less than a year by making self-hosted GLM models its default</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Revolutは、自前でホストするGLMモデルを既定にして、1年足らずでAIコーディングの推論コストを約90%削減したと発表した。Claude Codeのような商用ツールから切り替えた形で、The Registerが報じている。</div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/">ノートPCのQwen 3.8 27Bでもモデルの重みを解釈できた</a></span></div><div class="orig">Qwen 3.8 27B on my laptop can interpret model weights, too</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Simon Willisonが、手元のノートPCで動くQwen 3.8 27Bでもモデルの重みの解釈ができたと報告した。元の論文（Takehi、Teoh、Zhang、Khattabの4名）を手元で追試した内容で、大きなモデルでなくても重みの読み取りが起きることを示す。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261103/p32#a261103p32">Anthropic、応答が本当にそのモデルから来たかを暗号で検証するFlashProveを公開</a></span></div><div class="orig">Anthropic releases FlashProve, open-source code that cryptographically verifies an AI response came from a given model</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Anthropicが、AIの応答が指定したモデルから出たもので、ルーターが安いモデルに差し替えたものではないことを暗号的に検証するオープンソースのコード「FlashProve」を公開した。モデルの差し替えや偽装を検出する用途を想定している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261103/p28#a261103p28">CrowdStrike、暴走する社内AIエージェントを止める「AI kill switch」</a></span></div><div class="orig">CrowdStrike debuts an AI kill switch in Falcon Guardian to stop internal AI agents that go rogue</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">CrowdStrikeが、制御を外れた社内AIエージェントを停止させる「AI kill switch」をFalcon Guardianで提供すると発表した。Claude Coworkとの連携も発表している。CNBCが報じている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261103/p27#a261103p27">Apple、Siri AIを全開発者に開放</a></span></div><div class="orig">Apple opens Siri AI to all developers, letting any app on iOS 27.3 beta and other ...</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Appleが、iOS 27.3 beta以降でSiriのAI機能をすべての開発者に開放した。任意のアプリがSiri AIを利用できるようになる。Apple Developerの告知をTechmemeが伝えている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://aishodo.enpitsu.org/">AI書道コンクール</a></span></div><div class="orig">AI書道コンクール</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">AIに書道をさせる「AI書道コンクール」のサイト。作品が並ぶ形式で、AIが生成した書をどう評価するかという試みになっている。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://anond.hatelabo.jp/20261103160506">ドメイン更新料が2,676円から18,139円に、45時間で判断を迫られた</a></span></div><div class="orig">ドメイン更新料が2,676円から18,139円に。通知から約45時間で判断を迫られた話</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">お名前.comで管理していたドメインの更新費用が、前年の2,676円から18,139円（約6.8倍）になったという体験談。通知から約45時間で判断を迫られたと書いている。同じ時期に、年間1万円だったドメインが17万円になったという事例も別に投稿されており、レジストリ側の価格改定が利用者にどう通知されるかが論点になっている。</div><div class="related">関連: <a href="https://note.com/t_yabuhara/n/n7871bfc65d5c">同種の事例（taro.bar）</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/babarot/articles/regomark-adr-checker">ADRをregoでlintする</a></span></div><div class="orig">ADRをregoでlintする</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">AIが書くADRのフォーマットを揃えるため、ADRをrego（OPAのポリシー言語）でlintする仕組みを作った話。必須項目や見出しの構造を機械的に検査し、レビューの前に形式のばらつきを落とす。</div><div class="related">関連: <a href="/archive/2026-11-03.html">11/03号: AIが書くADRのガイドライン</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://protocol-explorer-alpha.vercel.app/">Protocol Explorer、パケット単位でインターネットの仕組みを学ぶ</a></span></div><div class="orig">Protocol Explorer · Learn how the internet works</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">HTTPやHTTPSなどのやり取りをパケット単位で見ながら学べるインタラクティブ教材。ブラウザ上で通信の流れを追える形式になっている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://blog.nns.ee/2026/11/02/renault-hack/">Renaultのナビをハックして、時刻を変えられるようにした</a></span></div><div class="orig">Jailbreaking my car&#x27;s navigation system just so I can change the time</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">2014年式Renault Latitudeのナビゲーションの時刻を変えるため、ファームウェアの更新イメージを解析した記録。QEMUでエミュレータを組み、同じ2.6系カーネルとCANのエミュレータを用意して、改造した更新イメージの動作を確かめている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.nikkei.com/article/DGXZQOUC032AG0T01C26A1000000/">セブン、宅配「セブンナウ」の顧客情報16万件超が流出</a></span></div><div class="orig">セブン、宅配サービス「セブンナウ」の顧客情報16万件流出</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">セブン-イレブン・ジャパンは11月3日、宅配サービス「セブンナウ」の業務委託先が不正アクセスを受け、顧客情報が流出したと発表した。注文者の名前や住所など16万件超が対象という。</div><div class="related">関連: <a href="/archive/2026-10-28.html">10/28号の国内インシデント連鎖</a></div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261103/p35#a261103p35">Super MicroのQ1、売上298%増の199.5億ドル</a></span></div><div class="orig">Super Micro reports Q1 revenue up 298% YoY to $19.95B, vs. $16.39B est.</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Super Microの2026年度Q1は売上高が前年同期比298%増の199.5億ドルで、市場予想の163.9億ドルを大きく上回った。ロイターが報じている。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261103/p34#a261103p34">AMDのQ3、売上45%増の133.8億ドル</a></span></div><div class="orig">AMD reports Q3 revenue up 45% YoY to $13.38B, vs. $13.09B est., Data Center revenue ...</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">AMDの2026年Q3は売上高が前年同期比45%増の133.8億ドルで、市場予想の130.9億ドルを上回った。データセンター部門の伸びが牽引している。CNBCが報じている。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://arstechnica.com/gadgets/2026/10/fujifilm-to-boost-tape-production-5x-as-ai-fuels-archiving-demand/">Fujifilm、AIによるアーカイブ需要でテープ生産を5倍に</a></span></div><div class="orig">Fujifilm to boost tape production 5x as AI fuels archiving demand</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Fujifilmが、LTOテープの生産能力を2025年比で5倍に引き上げると発表した。神奈川工場（小田原サイト）に2026〜2028年度で投資し、最新世代のLTO Ultrium10を主に生産する。AIによるデータの長期保存需要が背景にあるという。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261103/p33#a261103p33">Ubisoftなど少なくとも3社がMicrosoftのゲーム事業に買収提案か</a></span></div><div class="orig">Sources: Ubisoft and at least two other gaming companies made offers to Microsoft</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Bloombergの報道として、Ubisoftと少なくとも2社のゲーム企業が、Microsoftのゲーム事業に対して買収の提案を行ったと伝えられている。Jason Schreier氏の取材による。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 11/4 06:57 JSTごろに収集（HNトップ・はてなIT・Techmeme・Zenn日次API）。4ソースとも取得できた。PostmanのIssue本文、Honnibal氏の反論、Simon Willisonの追試、Revolut・FlashProve・CrowdStrike・AMD/Super Micro、Fujifilm、Renault は本文を取得して確認した。AI書道コンクールとProtocol Explorer は見出しと概要のみで、詳細な中身は確認していない。前号で扱ったAstraの記事には反論が出ているため、必読で併せて扱った。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
