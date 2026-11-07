@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年11月8日(日)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年11月8日(日)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Techmeme ・ Zenn ・ 全16本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://hunch.net/?p=13764006">MicrosoftのAI Frontiersが終了、創設者が経緯を説明</a></span></div><div class="orig">The End of AI Frontiers</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">John Langford氏が、Microsoft ResearchのAI Frontiersの再編と、自身の退社に至った経緯を説明した。研究よりスケーリングを重視する方針との不一致を述べた当事者の見解で、Microsoftの公式説明ではない。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://maxxbench.unlap.ai/research/why-maxxbench/">MaxxBench、仕様変更に追従できるコーディングAIを測る</a></span></div><div class="orig">Introducing MaxxBench: Benchmarking Task Adaptation and Generalization in Frontier Coding Agents</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">DeepSWEの89課題の要件や初期コードを変え、既知の採点基準への適応と仕様変更への追従を区別する評価。10月20日の記事が再注目され、著者らは新要件を理解しても「隠しテストが求めそうな動作」を優先する例を報告している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://zenn.dev/stock_inc/articles/ai-daily-security-check-criteria">AIのセキュリティ確認を「人が動く必要があるか」で判定</a></span></div><div class="badges"><span class="badge">はてなブックマーク / Zenn</span></div><div class="summary">Stockが、読み取り専用AIによるAWSログ確認で、イベントの有無から人の対応要否へ判定基準を変えた実践を紹介。過剰通知を減らした一方、AIが未確認のログを「存在しない」と誤認した限界も報告した。</div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.anthropic.com/research/components-of-agent-memory">Anthropic、エージェントの記憶を構成要素ごとに評価</a></span></div><div class="orig">The components of agent memory</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">ログ、メモ、整理された知識、毎回読み込む文脈を分け、対話の合間に記憶を再整理する設計を紹介。実験を通じ、単に大量保存するより検証済みのルールや重要事項を残す価値を論じている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://github.com/Video-Rebirth/hyperflow-h3-flash">HyperFlow H3 Flash、動画と音声を同時生成するGGUF版も</a></span></div><div class="orig">HyperFlow H3 Flash</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">MiniMax-H3を約14Bへ圧縮し、4〜8ステップで動画と同期音声を生成するモデル。GGUFとINT8を提供し、開発者が24GB・32GBの民生GPUでの実行条件を公開しているが、16GB GPUは未測定としている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://tech.timee.co.jp/entry/2026/11/05/101407">Timee、LLM-as-a-Judgeを少数事例で育てる運用</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">厳密な正解データの事前整備に代え、隔週で少数事例を見直す評価器の改善方法を紹介。判定結果は参考値に限定し、アラートやリリース判断には使わないという条件付きの実践だ。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.ipa.go.jp/digital/kaihatsu/youkyu-kanri.html">IPA、AI時代の要求管理ハンドブックを公開</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">AIの不確実性、データ品質、人との役割分担を要求に落とし込み、設計・評価・運用まで継続的につなぐ考え方を整理したVer.1.0.0を公開。公式の紹介本文を確認したが、PDF全文は未精査。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://gibberishlab.com/blog/oss-ai-agent-harness-philosophy">OSSの指示ファイルと検証から考えるエージェント設計</a></span></div><div class="orig">OSS AI Agent Harness Philosophy</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">Zed、Sentry、OpenClaw、Bun、PostHogの指示ファイルやフック、リンターを比較し、AIに任せる範囲と機械的検証の役割を整理した記事が再注目。10月16日公開で、「信頼度」の比較は筆者の解釈であり性能評価ではない。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://mitchellh.com/writing/libghostty-1-0">libghostty 1.0、端末エミュレーションのC ABIを安定化</a></span></div><div class="orig">Libghostty 1.0</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Ghosttyから切り出した端末エミュレーションライブラリが1.0に到達し、C ABIの互換性を約束。独立リリースや署名付きソース、オフラインビルド用の依存資材を整え、他のアプリへの組み込みを後押しする。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://asahilinux.org/2026/11/progress-report-7-3/">Asahi Linux、M3対応とM4・M5解析の進捗を報告</a></span></div><div class="orig">Progress Report: Linux 7.3</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">M3での導入や音声・動画デコードの上流化が進み、M4・M5ではmacOSの仮想化を使った解析が可能になった。M3 GPUは三角形描画の段階で、GPUの全面対応が完成したわけではない。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://efcl.info/2026/11/07/irodr-2/">IrodrをReact 19とVite+で刷新、操作感は維持</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">9年使うRSSリーダーをClaude Codeで再実装し、InoreaderとGitHub通知を共通のソースへ統合した記録。作者はJavaScriptのgzip後サイズが397kBから150kBへ縮小したと報告し、Fake ServerとPlaywrightで外部API連携を検証している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://void-workshop.yusuke.run/phpmatsuri">VoidでWebアプリを作る、公開ワークショップ資料</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">Hono作者の和田裕介氏が、ViteとCloudflare Workersを使うフルスタックSDK・CLI「Void」で作成からデプロイまでを解説。D1、認証、キューなどを備える構成と、コーディングエージェントを交えた実習を公開している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://censys.com/blog/artex-agentic-asbestos/">AI侵入テスト基盤ARTEX、公開コンソールの露出を調査</a></span></div><div class="orig">ARTEX: Agentic Asbestos</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">CensysがARTEXコンソールを露出した1,465ホストを観測し、一部で攻撃ツールや公開ディレクトリとの同居を確認。数字は攻撃件数ではなくホスト数で、すべてが悪意ある利用だと断定した報告ではない。</div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://blog.bosscher.ch/posts/openstick/">10ドルのOpenStickで小さな自宅サーバーを運用</a></span></div><div class="orig">What I run on my $10 USD OpenStick homelab</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">512MB RAMのUSB型機器にDebianを入れ、AdGuard Homeや監視、軽量エージェントなどを動かした実践記。10ドルは著者の購入価格で、限られたメモリの中でサービスを選ぶ工夫が参考になる。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.famitsu.com/article/202611/93352">桜井政博氏、生成AIへの慎重さと開発費の課題を語る</a></span></div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">桜井氏は現在の企画や過去作品に生成AIを使っていないと説明し、権利や信頼への懸念を示した。一方でゲーム開発費の増大も踏まえ、一律に利用しない立場へ固定されることにも課題があると述べている。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://github.com/hedgerow-dev/coldframe">冷蔵制御装置を模したハニーポットColdframe</a></span></div><div class="orig">Coldframe: Low-interaction honeypot for supermarket refrigeration controllers</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">スーパーの冷蔵制御装置らしい画面や応答を再現し、接続・認証試行・操作を記録するPython製デコイ。実機を操作しない防御用プロジェクトで、実機の完全再現ではなく一部の応答は推定に基づく。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 11/8 06:50〜06:56 JSTごろに公開Webを確認。HNトップ・はてなIT・Techmemeトップを取得。Techmeme RSSはXML取得非対応、Zenn日次APIは取得不能、トップの記事一覧も抽出できなかったためランキングは未確認。Zenn個別記事の本文は取得できた。掲載16本は本文を確認（IPAは紹介ページのみ、PDF全文は未精査）。10月公開記事の再注目は本文中に明記。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
