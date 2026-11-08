@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年11月9日(月)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年11月9日(月)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Techmeme ・ Zenn ・ 全17本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again">Claude Codeの「Don&#x27;t Ask Again」、公開GitHubにパスワード露出</a></span></div><div class="orig">Claude Code&#x27;s &quot;Don&#x27;t Ask Again&quot; exposes passwords in 1,122 public GitHub files</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Apiiroの調査として、Claude Codeの「Don&#x27;t Ask Again」を選ぶとパスワードなどの秘密情報が承認なしに扱われ、公開GitHubの1,122ファイルに露出していたと報告された。コーディングエージェントの承認疲れを狙う設定が、そのまま情報漏えいの経路になりうる例になる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.techmeme.com/261108/p14#a261108p14">Nvidia会長が不倫を認め、取締役会が調査を開始</a></span></div><div class="orig">Email to staff: Jensen Huang admits an affair, takes &quot;full responsibility&quot;</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">NvidiaのJensen Huang CEOが社内メールで不倫を認め、全責任を負うと述べたとAxiosが報じた。あわせて取締役会が、同氏が何らかの工作の標的になったかどうかの調査を始めたとBloombergが伝えている。Nvidia自身も取締役会の声明を公開している。</div><div class="related">関連: <a href="https://www.techmeme.com/261108/p13#a261108p13">取締役会の調査（Bloomberg）</a> / <a href="https://nvidianews.nvidia.com/news/statement-from-nvidia-board-of-directors">Nvidiaの声明</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.thestateofai.com/news/goldman-sachs-claude-code-traders-bankers">Goldman Sachs、Claude Codeを撤去</a></span></div><div class="orig">Goldman Sachs Is Pulling Claude Code from Its Bankers and Traders</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Goldman Sachsが、銀行員やトレーダーに配っていたClaude Codeを撤去していると報じられた。大規模な金融機関でのAIコーディングツールの扱いが変わった事例になる。</div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261108/p12#a261108p12">DeepSeek Harness、11月4日にDAU154万</a></span></div><div class="orig">DeepSeek says its open-source agent app Harness hit 1.54M DAUs on November 4</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">DeepSeekが、オープンソースのエージェントアプリ「Harness」の日次利用者数が11月4日に154万人に達したと発表した。Bloombergが報じている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://hiraoku.dev/blog/mcp-cli-cloud/">MCPはなぜ復権したのか、CLIが支持された理由</a></span></div><div class="orig">MCPはなぜ復権したのか：CLIが支持された理由と、流れを変えた仕様変更</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">MCPへの批判が生まれ、CLIが支持された経緯を整理し、その後の仕様変更で流れが変わった理由を解説している。2026年7月28日の変更が転機になったとしている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://atmarkit.itmedia.co.jp/ait/articles/2611/08/news001.html">マルチエージェント設計の15パターンを整理</a></span></div><div class="orig">【図解あり】マルチエージェント設計「15のパターン」　GitHub、Google、Siemensの知見を一気に整理</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">GitHub、Google、Siemensなどの知見をもとに、マルチエージェント設計の15パターンを図解で整理している。あわせて、エージェントの暴走を防ぐ6つの基本原則も紹介している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261108/p8#a261108p8">Anthropic、1.7GWのガス発電設備を確保</a></span></div><div class="orig">Sources: Anthropic bought commitments for 1.7GW of gas-fired generators</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Anthropicが、1.7GW分のガス焚き発電設備の供給枠を確保したとFinancial Timesが報じた。データセンターの電力を自前で押さえる動きになる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261108/p9#a261108p9">Apple、Ternus氏がAI対応の速度を要求か</a></span></div><div class="orig">Sources: John Ternus wants more urgency in Apple&#x27;s AI efforts</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Bloombergの報道として、AppleのJohn Ternus氏がAIへの取り組みにもっと速度を求めており、Craig Federighi氏らに働きかけていると伝えられている。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://caleb.software/posts/claude-to-pi.html">Goodbye Claude, hello Pi——エージェントを乗り換えた記録</a></span></div><div class="orig">Goodbye Claude, hello Pi</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Claude Codeから別のエージェント（Pi）に乗り換えた経緯を書いた記事。何が不満で、乗り換え後に何が変わったかをまとめている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://github.com/synchopate/llama-modchip">Llama-modchip、284BのDeepSeekを64GB RAMでGPUなしに</a></span></div><div class="orig">Llama-modchip: 284B DeepSeek on 64GB RAM, no GPU</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">284BパラメータのDeepSeekモデルを、64GBのRAMだけでGPUなしに動かす試み。モデルの一部を外部に置く仕組みで動かしている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/torudev/articles/dd45de860fc7c3">静的型付けはAIのバグを減らすか、TSとJSで比較</a></span></div><div class="orig">静的型付けはAIのバグを減らすか？ TypeScriptとJavaScriptで同じGit互換CLIを3本ずつ書かせて比べた</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">同じGit互換CLIをTypeScriptとJavaScriptで3本ずつAIに書かせ、静的型付けがバグを減らすかを比べている。型があることで何が変わるかを実測で見ようという試み。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/naokisuzuki27/articles/cb1a5ac0e23763">SELECTだけなのにPostgreSQLのマイグレーションがロック待ちで失敗</a></span></div><div class="orig">SELECTしかしていないのに、PostgreSQLのマイグレーションがロック待ちで失敗した話</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">SELECTしかしていないのに、マイグレーションがロック待ちで失敗した事例。何がロックを握っていたのかを追跡した記録になっている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/takuyousou/articles/lambda-durable-checkpoint-idempotency">Lambda Durable Functionsでも二重実行は起こるか</a></span></div><div class="orig">Lambda Durable Functionsでも二重実行は起こる？Checkpointの境界と冪等性を実機検証</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">Lambda Durable Functionsのチェックポイントの境界と冪等性を実機で検証している。二重実行がどの条件で起きるかを確かめた記録。</div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://mailroute.net/blog/outlook-rejecting-email-without-dmarc">Outlook.com、DMARCの無いドメインからのメールを拒否</a></span></div><div class="orig">Outlook.com Is Quietly Rejecting Email from Domains Without DMARC</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Outlook.comが、DMARCを設定していないドメインからのメールを静かに拒否しているという指摘。送信側の設定漏れが、届かない障害として現れる。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://news.ntv.co.jp/category/economy/4524fbcdecaf445bac0d956439508aca">個人情報を「持たない」企業が増えている</a></span></div><div class="orig">個人情報“手放す”企業続々 「持たないことが抜本的な解決に」 漏えいなくても運用変更も</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">不正アクセスによる漏えいが相次ぐ中で、そもそも個人情報を持たない選択をする企業が出てきていると日テレが報じた。漏えいが起きていなくても運用を変える例があるという。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261108/p15#a261108p15">米国の専門サービス、10月に7万人増</a></span></div><div class="orig">US professional services added 70K jobs in October, the most since July 2022</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">米国の専門サービス分野が10月に7万人の雇用を増やし、2022年7月以来の大きさになったとWall Street Journalが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261108/p10#a261108p10">AI企業が2026年に3,000億ドル超の株を売却</a></span></div><div class="orig">Excluding Anthropic&#x27;s IPO, AI companies sold or priced $300B+ of stock in 2026</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">AnthropicのIPOを除いても、AI企業が2026年に3,000億ドル超の株式を売却または価格設定したとThe Informationが報じた。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 11/9 06:57 JSTごろに収集（HNトップ・はてなIT・Techmeme・Zenn日次API）。4ソースとも取得できた。別の実行主体が同じ時刻に走っているため、公開前にリモートを確認する運用にしている。今日は本文取得を最小限にし、見出しと要約で判断した項目がある（Apple、Anthropicの電力、DeepSeek HarnessのDAU、Goldman Sachs、Nvidia、Claude Codeの露出）。一次発表まで追えていないものは、その前提で読んでほしい。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
