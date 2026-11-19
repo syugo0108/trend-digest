@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年11月20日(金)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年11月20日(金)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Techmeme ・ Zenn ・ 全17本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/">Anthropic、Nasdaq上場初日に評価額2兆ドル</a></span></div><div class="orig">Anthropic hits $2T in Nasdaq debut</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">AnthropicがNasdaqに上場し、初日の評価額が2兆ドルに達したとReutersが報じた。AI企業の上場としては異例の規模で、市場がAIの成長をどう見ているかを示す事例になる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://verialabs.com/ruby2shell/">Ruby2Shell、素のRailsで認証前のリモートコード実行</a></span></div><div class="orig">Ruby2ßhell: Pre-authentication RCE on stock Rails</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Veria Labsが、素の状態のRuby on Railsに認証前のリモートコード実行につながる脆弱性があると公表した。影響する構成と確認方法が記事にまとまっている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.anthropic.com/research/claude-black-hole-physics">Claudeがブラックホール物理の未解決問題を2つ解いた</a></span></div><div class="orig">Claude solves two open problems in the physics of black holes</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Anthropicが、Claudeがブラックホール物理学の未解決問題を2つ解いたとする研究を公開した。何をどこまで解いたのか、検証の状況とあわせて読む必要がある。</div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261119/p47#a261119p47">Google、macOS版Geminiにcomputer useを追加</a></span></div><div class="orig">Google adds computer use to Gemini for macOS, letting it work across apps</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">GoogleがmacOS版のGeminiにcomputer useを追加し、複数のアプリをまたいで操作できるようにしたとTechCrunchが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261119/p49#a261119p49">Meta、Muse Charmを300ドルで販売へ</a></span></div><div class="orig">Source: Meta plans to charge $300 for its forthcoming Muse Charm device</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Metaが、今後発売するMuse Charmというデバイスを300ドルで販売する計画だとThe Informationが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://ascii.jp/elem/000/004/452/4452982/">Anthropic研究者「ほぼ全人類が永久に失業する」と予測</a></span></div><div class="orig">「ほぼ全人類が永久に失業する」Anthropic研究者がAIの未来を予測</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">Anthropicの研究者Tao Lin氏が、人間の雇用の将来について厳しい見通しを示したとASCIIが報じた。非営利団体Palisade Researchの発表を受けた発言になる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261119/p43#a261119p43">Google、模擬インターネット「Mirror Dimension」を構築</a></span></div><div class="orig">Google built a &quot;Mirror Dimension&quot;, an isolated internet with simulated e...</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Googleが、模擬的な環境を持つ隔離されたインターネット「Mirror Dimension」を構築したとWiredが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://yamazato.nuee.nagoya-u.ac.jp/PDF/AI-for-Teachers-an-Open-Textbook-v1.0.0.pdf">教師のためのAI入門、オープン教材が公開</a></span></div><div class="orig">教師のためのAI入門</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">名古屋大学の山形大学の研究室が、教師向けのAI入門のオープン教材を公開している。授業でAIをどう扱うかを、基礎から説明している。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.itmedia.co.jp/news/article/2611/19/2000003351/">NIKKE経由のマルウェア感染、北海道2自治体の委託先が認める</a></span></div><div class="orig">美少女ゲーム「NIKKE」経由でマルウェア感染　北海道2自治体、委託先が認める</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">北海道の岩見沢市など2自治体で、業務の再委託先が使う情報機器がマルウェア「K2F」に感染し、個人情報が漏えいした可能性があると発表された。11月18日に確認されたとしており、前号で扱ったNIKKEのPCランチャー改ざんの影響が国内の自治体に及んだ形になる。</div><div class="related">関連: <a href="/archive/2026-11-06.html">11/06号: PCランチャー改ざん</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/kusuke/articles/98e178e6824cac">相次ぐOSSの脆弱性に、クラウドWAFとRootlessコンテナ</a></span></div><div class="orig">相次ぐOSSの脆弱性に、とりあえずクラウドWAF入れるだけでだいぶ違う話+Rootlessコンテナもいいぞ</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">OSSの脆弱性が相次ぐ中で、クラウドWAFを入れるだけでも防御の幅が変わるという話と、Rootlessコンテナの利点をまとめている。Nginxの脆弱性が話題になった直後の実践的な内容。</div><div class="related">関連: <a href="/archive/2026-11-19.html">11/19号: NginxのRCE</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://forest.watch.impress.co.jp/docs/news/2158039.html">PHPの17件の脆弱性、認証不要のRCEにつながるものも</a></span></div><div class="orig">「PHP」で17件の脆弱性に対処、認証不要のリモートコード実行につながる“致命的”なものも</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">PHPの8.5.13、8.4.28、8.3.37などで17件の脆弱性が修正されたと窓の杜が報じた。認証不要のリモートコード実行につながる致命的なものも含まれる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.ipa.go.jp/security/security-alert/2026/alert20261119.html">IPA、NGINXの複数の脆弱性への対策を公開</a></span></div><div class="orig">NGINXの複数の脆弱性対策について（CVE-2026-123007、CVE-2026-123633等）</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">IPAが、NGINXの複数の脆弱性（CVE-2026-123007、CVE-2026-123633など）について対策情報を公開した。前号で扱ったWizのRCE報告を受けた国内の注意喚起にあたる。</div><div class="related">関連: <a href="/archive/2026-11-19.html">11/19号: Wizの発表</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/nagatsukey/articles/1782a56f61a45e">ProtobufチームはImplicit Presenceを作ったことを後悔しているらしい</a></span></div><div class="orig">Protobufチームは Implicit Presence を作ったことを後悔しているらしい</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">ProtobufのImplicit Presenceが、設計上の後悔として語られていることを紹介している。なぜ問題になったのかを、仕様の変遷から説明している。</div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://element.io/blog/how-the-european-commission-rolled-out-matrix-to-more-than-40-000-staff/">欧州委員会、4万人以上の職員にMatrixを展開</a></span></div><div class="orig">How the European Commission rolled out Matrix to more than 40k staff</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">欧州委員会が、4万人以上の職員に対してMatrixを展開した経緯をElementがまとめている。大規模な組織で分散型の通信基盤をどう導入したかを扱う。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/">英国政府、Appleへの秘密の暗号化命令を認める</a></span></div><div class="orig">UK government forced to admit it issued Apple a secret encryption order</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">英国政府が、Appleに対して秘密裏に発出した暗号化に関する命令の存在を認めさせられたと報じられている。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.newscientist.com/article/2528235-pancreatic-cancer-halted-by-virus-injection-in-three-patients/">膵臓がんで3患者の腫瘍がウイルス注入で停止</a></span></div><div class="orig">Pancreatic cancer halted by virus injection in three patients</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">ウイルスを注入する治療で、膵臓がんの3患者の腫瘍の進行が止まったとNew Scientistが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261119/p51#a261119p51">Intuit、MailchimpをBending Spoonsへ売却</a></span></div><div class="orig">Intuit agrees to sell marketing subsidiary Mailchimp to Bending Spoons</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Intuitが、マーケティング子会社のMailchimpをBending Spoonsに売却することで合意したとCNBCが報じた。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 11/20 06:57 JSTごろに収集（HNトップ・はてなIT・Techmeme・Zenn日次API）。4ソースとも取得できた。別の実行主体との競合があるため本文取得を最小限にし、見出しと要約で判断した項目がある（Anthropic上場、Ruby2Shell、Claudeの物理、Gemini computer use、Muse Charm、Mirror Dimension、EU Matrix、英国、膵臓がん、Mailchimp）。新規性の高い脆弱性（Ruby2Shell、PHP）は修正版の適用条件まで確認していない。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
