@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年11月22日(日)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年11月22日(日)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Techmeme ・ Zenn ・ 全17本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/">リーマン予想の証明、Leanでの検証はどこまで進んだか</a></span></div><div class="orig">Lean verification of the Riemann Hypothesis</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">一般リーマン予想（GRH）の証明主張について、Leanコミュニティが形式検証の進捗を公開している。数学者の加藤文元氏も11月21日夜時点の検証状況を整理しており、Andrew Sutherland氏の公開検証記録の更新に触れている。Scientific Americanは、この証明がAI支援によるものだと報じており、主張の正しさはまだ確定していない。</div><div class="related">関連: <a href="https://alpo.ge/remark.pdf">Alpöge氏の論文</a> / <a href="https://note.com/katobungen/n/n9c2bb939b9c7">加藤文元氏の検証状況メモ</a> / <a href="https://www.techmeme.com/261121/p4#a261121p4">AI支援の証明（Scientific American）</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://thinkingmachines.ai/news/inkling-2-mini/">Thinking MachinesのInkling 2 Mini、5.4GBでも動く</a></span></div><div class="orig">Inkling 2 Mini</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Thinking Machines LabのInkling 2 Miniが大きな反響を呼んでいる。26.4Bパラメータのオープンウェイトのモデルで、量子化によって5.4GBのメモリでも動かせたという実装が公開されている。</div><div class="related">関連: <a href="https://github.com/ShinMegamiBoson/lookatmyquant">5.4GBメモリでの実行</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://www.techmeme.com/261121/p3#a261121p3">Microsoft To Do、2027年6月30日で廃止</a></span></div><div class="orig">Microsoft plans to retire its To Do app on June 30, 2027</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">MicrosoftがTo Doアプリを2027年6月30日に廃止すると発表したとGeekWireが報じた。個人は別アプリへの移行が必要で、法人向けはPlannerが後継になる。</div><div class="related">関連: <a href="https://forest.watch.impress.co.jp/docs/news/2158040.html">窓の杜</a></div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261121/p10#a261121p10">研究者、canary credentialsでAIルーターの挙動を検証</a></span></div><div class="orig">Researchers used canary credentials in requests to AI routers like OpenRouter</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">研究者が、OpenRouterなどのAIルーターに対するリクエストにcanary credentialsを仕込んで、実際にどのモデルが応答しているかを検証したとArs Technicaが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261121/p8#a261121p8">Amazon、AIスタートアップDecartを75億ドルで買収へ</a></span></div><div class="orig">Sources: Amazon is nearing a $7.5B deal to buy AI startup Decart</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Amazonが、AIスタートアップのDecartを75億ドルで買収する取引に近づいているとFinancial Timesが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261121/p6#a261121p6">DeepMindの社内哲学者インタビュー</a></span></div><div class="orig">An interview with Google DeepMind in-house philosopher Henry Shevlin</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Google DeepMindの社内哲学者Henry Shevlin氏へのインタビューをFinancial Timesが掲載した。AIの進展に伴う倫理や価値の扱いが主題になる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://smhn.info/202611-gemini-subscription-third-party-harness-december-2">GeminiをAIオタクが避ける理由、12月に解消の可能性</a></span></div><div class="orig">どれだけGeminiが賢くなってもAIオタクが避ける理由。ついに解消の可能性</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">Geminiが賢くなっても一部のAI利用者が避ける理由として、第三者製ハーネスでの扱いが挙げられており、12月にそれが解消される可能性があると伝えている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.gizmodo.jp/article/0b0516f2-94f8-442e-bdae-2987f090be13/">1万円のシンセをAIで魔改造、ファームウェア開放が始まる</a></span></div><div class="orig">1万円のシンセをAIで魔改造。電子楽器のファームウェア開放が始まった</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">中国のM-VAVEの小型FMシンセ「FM-1」で、ユーザーによるファームウェアの改造が広がっているとGizmodoが報じた。AIを使って解析・改変した例がきっかけになっている。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://kosui.me/posts/2026/11/15/code-design-after-agents">ソフトウェアファクトリーとコード設計と顧客価値</a></span></div><div class="orig">ソフトウェアファクトリーとコード設計と顧客価値</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">人とエージェントの作業が交互に続く流れを図にしながら、ソフトウェアファクトリーにおけるコード設計と顧客価値の関係を論じている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://github.com/mitaku/andon">andon、一人で回すソフトウェアファクトリー</a></span></div><div class="orig">A one-person software factory: AI coding agents take issues</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">AIコーディングエージェントがIssueを拾って進める、一人用のソフトウェアファクトリーの実装。どう運用するかをリポジトリで公開している。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/karamage/articles/73027ee36796dc">AIにテストケースを書かせるな、TLA+でルールを書け</a></span></div><div class="orig">【TLA+】AIにテストケースを書かせるな。ルールを書け</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">AIにテストケースを書かせるのではなく、TLA+で仕様とルールを書くべきだと主張している。何を機械に確かめさせるかの設計が主題になる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://blog.tymscar.com/posts/studiodisplayethernet/">モニターがダウンロード速度を75%削減していた</a></span></div><div class="orig">My monitor was cutting my download speed by 75%</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">ディスプレイのEthernet経由の接続が、ダウンロード速度を75%落としていた原因を追った記録。どこで詰まっていたかを切り分けている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://manidoraisamy.com/developer-to-architect.html">開発者をアーキテクトに昇進させたが、本人に伝えていなかった</a></span></div><div class="orig">We promoted developers into architects without informing them</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">開発者をアーキテクトに昇進させたのに、本人に伝えていなかったという組織の失敗を扱っている。役割の変化をどう伝えるかの問題になる。</div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261121/p7#a261121p7">中国の大手テック企業、設備投資を倍の1,390億ドルに</a></span></div><div class="orig">Rhodium: China&#x27;s biggest tech companies are set to double capex to $139B</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">調査会社Rhodiumの分析として、中国の大手テック企業が設備投資を倍増させ、1,390億ドルに達する見通しだとNew York Timesが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261121/p9#a261121p9">Alice Huang氏、ゲーム企業やPrince Groupとの関係</a></span></div><div class="orig">Investigation: Alice Huang had ties to gaming firms, alleged Prince Group ...</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Financial Timesの調査として、Alice Huang氏がゲーム企業や、Prince Groupとされる組織との関係を持っていたと報じられた。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261121/p5#a261121p5">レーザー冷却原子の量子コンピュータ、誤り訂正の可能性</a></span></div><div class="orig">How quantum computers built from laser-trapped atoms may correct qubit errors</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">レーザーで捕獲した原子を使う量子コンピュータが、量子ビットの誤りを訂正できる可能性についてNew York Timesが解説している。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://togetter.com/li/2773158">みずほ銀行がハッキングされないのは仕様が分からないから説</a></span></div><div class="orig">みずほ銀行のシステムがハッキングされないの、開発者だけじゃなくてハッカーも仕様を把握できないから説</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">みずほ銀行のシステムが攻撃されにくい理由を、開発者だけでなく攻撃側も仕様を把握できないからだという説で説明する投稿が話題になった。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 11/22 06:57 JSTごろに収集（HNトップ・はてなIT・Techmeme・Zenn日次API）。4ソースとも取得できた。GRHは前号の続報として、Lean検証の進捗・加藤文元氏の状況メモ・AI支援という報道をまとめた。別の実行主体との競合があるため本文取得を最小限にし、見出しと要約で判断した項目がある。証明の正しさは依然として未確定。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
