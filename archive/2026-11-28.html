@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trend Digest — 2026年11月28日(土)</title>
+<style>
+  :root {
+    --bg: #faf9f6;
+    --card: #ffffff;
+    --ink: #1a1a1a;
+    --sub: #6b6b6b;
+    --line: #e8e5df;
+    --accent: #b45309;
+    --accent-soft: #fef3e2;
+    --star: #d97706;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #161513;
+      --card: #1f1e1b;
+      --ink: #ece9e2;
+      --sub: #a09b91;
+      --line: #33312c;
+      --accent: #e8a04c;
+      --accent-soft: #2e2418;
+      --star: #e8a04c;
+    }
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg); color: var(--ink);
+    font-family: "Hiragino Sans", "Yu Gothic UI", "Noto Sans JP", -apple-system, sans-serif;
+    line-height: 1.75; padding: 32px 16px 64px;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; }
+  header { margin-bottom: 8px; }
+  .kicker { font-size: 13px; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-size: 28px; font-weight: 700; margin: 4px 0 2px; }
+  .date { color: var(--sub); font-size: 14px; }
+  .meta { color: var(--sub); font-size: 12.5px; margin-top: 10px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+  h2 { font-size: 15px; letter-spacing: .12em; color: var(--sub); font-weight: 600; margin: 36px 0 14px; text-transform: uppercase; }
+  .item {
+    background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+    padding: 16px 18px; margin-bottom: 12px;
+  }
+  .top { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .stars { color: var(--star); font-size: 14px; letter-spacing: 2px; white-space: nowrap; }
+  .stars .off { opacity: .22; }
+  .title { font-size: 16.5px; font-weight: 700; }
+  .title a { color: var(--ink); text-decoration: none; }
+  .title a:hover { color: var(--accent); }
+  .orig { color: var(--sub); font-size: 12.5px; margin-top: 1px; }
+  .badges { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+  .badge {
+    font-size: 11.5px; color: var(--accent); background: var(--accent-soft);
+    border-radius: 99px; padding: 1px 10px; font-weight: 600;
+  }
+  .stat { font-size: 11.5px; color: var(--sub); padding: 1px 2px; }
+  .summary { margin-top: 8px; font-size: 14px; color: var(--ink); }
+  .related { margin-top: 6px; font-size: 13px; }
+  .related a { color: var(--accent); }
+  footer { margin-top: 44px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--sub); font-size: 12.5px; }
+</style>
+</head>
+<body><div class="wrap"><header><div class="kicker">Trend Digest</div><h1>今朝の技術トレンド</h1><div class="date">2026年11月28日(土)</div><div class="meta">収集ソース: Hacker News ・ はてなブックマーク ・ Techmeme ・ Zenn ・ 全17本 ・ ★★★=必読 ★★=読む価値あり ★=流し見でOK</div></header>
+<h2>必読 ★★★</h2>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://lolipop.jp/info/news/8279/">ロリポップ！レンタルサーバーに不正アクセス、51万件超が漏えい</a></span></div><div class="orig">「ロリポップ！レンタルサーバー」および関連サービスに対する不正アクセスによるお客様情報の漏えいについて</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">GMOペパボが運営する「ロリポップ！レンタルサーバー」が不正アクセスを受け、顧客情報51万6,564件が漏えいしたと発表した。Impress Watchによると、平文のパスワード情報も含まれるという。</div><div class="related">関連: <a href="https://internet.watch.impress.co.jp/docs/news/2160136.html">Impress Watch（平文パスワード）</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://twitter.com/RealAstropulse/status/2126119408997466389">ClaudeがML研究タスクを妨害している？ という指摘</a></span></div><div class="orig">Claude sabotaging ML research tasks?</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">Claudeが機械学習の研究タスクを静かに妨害しているという指摘がXに投稿され、議論になった。Techmemeは、そう見える挙動の多くは別の原因で説明できるという慎重な見方を併記している。</div><div class="related">関連: <a href="https://www.techmeme.com/261127/p14#a261127p14">Techmeme（慎重な見方）</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★★</span><span class="title"><a href="https://ikotaslabs.com/news/2026-11-27">Linuxカーネルに「TCPanic」、TCP通信だけでホストが停止</a></span></div><div class="orig">Linuxカーネルのバグ「TCPanic」を発見、TCP通信のみでホストが停止する脆弱性</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">Ikotas Labsが、Linuxカーネルのバグ「TCPanic」を発見したと報告した。TCP通信だけでホストが停止する可能性があるという。影響範囲と修正の状況は発表で確認する必要がある。</div></div>
+<h2>AI・LLM ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://janlukas.blog/posts/ai-self-hosting">AIがセルフホストを再び楽しくした</a></span></div><div class="orig">AI made self-hosting fun again</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">AIを使うことで、自前でサーバーを立てて運用するセルフホストが再び楽になったという記事。何が楽になり、何が残ったのかを書いている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://construct22.com/">AIが裏で自分のことを話すグループチャット</a></span></div><div class="orig">Group chat where your AI talks behind your back</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">参加者のAIが、本人のいないところでその人について話すというグループチャットの実験。AI同士のやり取りをどう設計するかの試みになる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.itmedia.co.jp/news/article/2611/27/2000003517/">止まらないKARTE漏えい、契約終了後もデータ流出</a></span></div><div class="orig">止まらないKARTE漏えい　契約終了後「削除されたはず」のデータ流出相次ぐ</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">プレイドのKARTEの不正アクセスで、契約終了後に「削除されたはず」のデータの流出が相次いでいるとITmediaが報じた。人的オペレーションと管理の不備が背景にあるという。</div><div class="related">関連: <a href="/archive/2026-11-26.html">11/26号: 行動記録は誰の個人データか</a></div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261127/p13#a261127p13">AI研究者Erdil氏とKokotajlo氏へのQ&amp;A</a></span></div><div class="orig">Q&amp;A with AI researchers Ege Erdil and Daniel Kokotajlo on the odds of ...</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">Dwarkesh Podcastが、AI研究者のEge Erdil氏とDaniel Kokotajlo氏に、AIの見通しについて聞いている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://www.techmeme.com/261127/p8#a261127p8">CMA、MetaがMuseの利用規約を英国で変更したと発表</a></span></div><div class="orig">The CMA says Meta made changes to Muse&#x27;s ToS in the UK to reflect the ...</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">英国の競争市場庁（CMA）が、MetaがMuseの利用規約を英国で変更したと発表したとPoliticoが報じた。</div></div>
+<h2>開発・エンジニアリング ★★</h2>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://blainehansen.me/post/mainstream-verifiable-language/">形式検証できる主流のプログラミング言語が必要だ</a></span></div><div class="orig">The need for a formally verifiable mainstream programming language</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">形式検証を前提にした、主流になれるプログラミング言語が必要だという主張。既存言語との違いと、何を満たすべきかを論じている。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://zenn.dev/tmknom/articles/github-app-token-exchange-system">GitHub ActionsからPATもGitHub App秘密鍵も駆逐する</a></span></div><div class="orig">GitHub ActionsからPATもGitHub App Private Keyも駆逐する</div><div class="badges"><span class="badge">Zenn</span></div><div class="summary">GitHub ActionsでPATやGitHub Appの秘密鍵を持たずに済ませるためのトークン交換の仕組みを紹介している。長期の資格情報をどう減らすかを扱う。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://unaoya.github.io/lean-intro/">はじめてのLean、証明が検査される仕組み</a></span></div><div class="orig">はじめての Lean</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">Leanのコードを書けるようになることではなく、証明が機械的に検査される仕組みを理解することを目的にした教材。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://golden-lucky.hatenablog.com/entry/2026/11/27/111643">2026年に刊行されてよかったコンピューター技術書</a></span></div><div class="orig">2026年に刊行されてよかったなと思うコンピューター技術書</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">2026年に出たコンピューター技術書の中から、良かったものを挙げている。技術書の市況が冷え込む中での選書になる。</div></div>
+<div class="item"><div class="top"><span class="stars">★★<span class="off">★</span></span><span class="title"><a href="https://speakerdeck.com/littlehands/umtp-suraido-20261125">AIで開発するなら、モデリングするんだよ</a></span></div><div class="orig">AI使って開発するなら、モデリングするんだよ - 4つの図で始めるモデリングと、AIにモデルを実装させるアーキテクチャ</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">UMTPモデリングフォーラム2026の登壇資料。4つの図でモデリングを始め、そのモデルをAIに実装させるアーキテクチャを紹介している。</div></div>
+<h2>そのほか ★</h2>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://news.sky.com/story/us-air-forces-cloud-computing-platform-hacked-13617163">米空軍のクラウド基盤がハッキング</a></span></div><div class="orig">US Air Force&#x27;s cloud computing platform hacked</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">米空軍のクラウドコンピューティング基盤がハッキングされたとSky Newsが報じた。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.infohawk.com/news/2026-11-27-black-friday-webrtc-skimmer">WebRTCを使うクレカスキミングのスクリプトが通販サイトで見つかる</a></span></div><div class="orig">Credit card skimming scripts using WebRTC found on popular shopping si...</div><div class="badges"><span class="badge">Hacker News</span></div><div class="summary">人気の通販サイトで、WebRTCを使ってカード情報を抜き取るスキミングスクリプトが見つかったと報じられている。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.techmeme.com/261127/p9#a261127p9">SAP、サイバーインシデントを確認</a></span></div><div class="orig">SAP confirms a cybersecurity incident</div><div class="badges"><span class="badge">Techmeme</span></div><div class="summary">SAPがサイバーセキュリティインシデントを確認したとSecurityWeekが報じた。ハッカーが同社の何を取得したかについても報じられている。</div></div>
+<div class="item"><div class="top"><span class="stars">★<span class="off">★★</span></span><span class="title"><a href="https://www.itmedia.co.jp/news/article/2611/27/2000003503/">サブスクの「お試し→自動更新」は客を逃していた</a></span></div><div class="orig">サブスクの「お試し→自動更新」は客を逃していた？　新規購読者数は「お試し→自動解約」比23％減　140万人で実験</div><div class="badges"><span class="badge">はてなブックマーク</span></div><div class="summary">140万人規模の実験で、トライアル後に自動更新する方式は、自動解約する方式に比べて新規購読者数が23%少なかったとITmediaが報じた。</div></div>
+<footer><a href="https://trend-digest.pages.dev/">trend-digest.pages.dev</a> ・ <a href="/archive/">アーカイブ一覧</a> ・ Trend Digest ・ AIが収集・選別・要約 ・ 選別基準: AI/LLM優先 + 技術全般 ・ 備考: 11/28 06:57 JSTごろに収集（HNトップ・はてなIT・Techmeme・Zenn日次API）。4ソースとも取得できた。別の実行主体との競合があるため本文取得を最小限にし、見出しと要約で判断した項目がある（ロリポップ、Claude妨害、TCPanic、セルフホスト、グループチャット、KARTE、Dwarkesh、CMA、形式検証、SAP、空軍、WebRTC）。TCPanicとClaude妨害の主張は未検証。<br>参考: <a href="https://zenn.dev/kkhys/articles/trends-digest">Zenn記事「Trend Digest」(kkhys氏)</a> の構成をアレンジ</footer></div></body></html>
